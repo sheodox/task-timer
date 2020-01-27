@@ -1,9 +1,11 @@
-from datetime import datetime
+import time
+
+work_time_duration = 5
 
 
 def start():
-    print('hello world!')
-    print(f'the current time is {datetime.now()}')
-
+    print('Start working!')
+    time.sleep(work_time_duration)
+    print('Take a break')
 
 start()
