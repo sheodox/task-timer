@@ -1,5 +1,6 @@
 import time
 import sys
+from playsound import playsound
 
 use_seconds = 'seconds' in sys.argv
 print(use_seconds)
@@ -16,12 +17,18 @@ if not use_seconds:
     break_time_duration *= 60
 
 
+def alarm():
+    playsound("alarm.wav")
+
+
 def start():
     print('Start working!')
     time.sleep(work_time_duration)
     print('Take a break')
+    alarm()
     time.sleep(break_time_duration)
     print("Break's over")
+    alarm()
 
     start()
 
