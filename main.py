@@ -1,9 +1,19 @@
 import time
+import sys
+
+use_seconds = 'seconds' in sys.argv
+print(use_seconds)
 
 print("-----------------Task Timer-----------------")
-print("Times are in minutes.")
-work_time_duration = int(input("How long do you want to work? ")) * 60
-break_time_duration = int(input("How long do you want the breaks? ")) * 60
+
+print(f"Times are in {'seconds' if use_seconds else 'minutes'}.")
+
+work_time_duration = float(input("How long do you want to work? "))
+break_time_duration = float(input("How long do you want the breaks? "))
+
+if not use_seconds:
+    work_time_duration *= 60
+    break_time_duration *= 60
 
 
 def start():
