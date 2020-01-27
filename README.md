@@ -17,5 +17,7 @@ A task timer! Cool things to come, maybe.
 ~~6. For dev purposes, use seconds~~
 
 ~~7. Audible cue for transitions~~
-8. To-Do list for actions 
+
+~~8. To-Do list for actions~~
+ 
 9. GUI - TBD
